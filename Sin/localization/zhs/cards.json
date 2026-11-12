@@ -9,6 +9,7 @@
   "SIN_CARD_IMITATE.title": "模仿",
 
   "SIN_CARD_TARGET.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n选择一张手牌[gold]打出[/gold]并[gold]变化[/gold]。",
+  "SIN_CARD_TARGET.selectionScreenPrompt": "择一张手牌打出并变化。",
   "SIN_CARD_TARGET.title": "目标",
 
   "SIN_CARD_GOLD_STRIKE.description": "造成{Damage:diff()}点伤害。",

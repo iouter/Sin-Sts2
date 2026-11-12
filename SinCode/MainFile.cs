@@ -33,6 +33,7 @@ public partial class MainFile : Node
 
         var patcher = RitsuLibFramework.CreatePatcher(ModId, "sin-patches");
         patcher.RegisterPatch<PlayerGoldPatch>();
+        patcher.RegisterPatch<DragonFruitAfterObtainedPatch>();
 
         if (!patcher.PatchAll())
             throw new InvalidOperationException("Critical patches failed.");
