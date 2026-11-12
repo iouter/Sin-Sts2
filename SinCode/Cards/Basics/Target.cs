@@ -10,9 +10,10 @@ using STS2RitsuLib.Interop.AutoRegistration;
 namespace Sin.SinCode.Cards.Basics;
 
 [RegisterCharacterStarterCard(typeof(Characters.Sin), Order = 3)]
-public class Target() : SinCard(0, CardType.Skill, CardRarity.Basic, TargetType.Self)
+public class Target() : SinCard(1, CardType.Skill, CardRarity.Basic, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5, ValueProp.Move)];
+    public override bool GainsBlock => true;
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
