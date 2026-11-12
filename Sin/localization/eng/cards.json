@@ -51,7 +51,7 @@
   "SIN_CARD_CONSTRUCT_CORE.title": "Construct Core",
   "SIN_CARD_CONSUME.description": "Deal {Damage:diff()} damage to a random enemy X times.\nLose {GoldLoss} Gold X times.",
   "SIN_CARD_CONSUME.title": "Consume",
-  "SIN_CARD_COST.description": "Unplayable.",
+  "SIN_CARD_COST.description": "Loot.",
   "SIN_CARD_COST.title": "Cost",
   "SIN_CARD_DAZZLE.description": "Whenever you deal damage, gain 1 random buff.",
   "SIN_CARD_DAZZLE.title": "Dazzle",

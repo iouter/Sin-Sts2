@@ -51,7 +51,7 @@
   "SIN_CARD_CONSTRUCT_CORE.title": "构造体核心",
   "SIN_CARD_CONSUME.description": "随机对敌人造成X次{Damage:diff()}点伤害。\n失去X次{GoldLoss}金币。",
   "SIN_CARD_CONSUME.title": "消费",
-  "SIN_CARD_COST.description": "无法被打出。",
+  "SIN_CARD_COST.description": "赃物。",
   "SIN_CARD_COST.title": "代价",
   "SIN_CARD_DAZZLE.description": "每造成1次伤害，获得1种随机正面状态。",
   "SIN_CARD_DAZZLE.title": "眼花缭乱",
