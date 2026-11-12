@@ -141,7 +141,7 @@
   "SIN_CARD_LIGHT_LOAD.title": "轻装上阵",
   "SIN_CARD_LOOT_BAG.description": "从[gold]消耗牌堆[/gold]抽{Cards}张牌。",
   "SIN_CARD_LOOT_BAG.title": "赃物袋",
-  "SIN_CARD_LOOT_STRIKE.description": "造成{Damage:diff()}点伤害。\n随机打出1张[gold]消耗牌堆[/gold]的攻击牌或技能牌，并将这些牌放入弃牌堆。",
+  "SIN_CARD_LOOT_STRIKE.description": "造成{Damage:diff()}点伤害。\n随机打出1张[gold]消耗牌堆[/gold]的攻击牌或技能牌。",
   "SIN_CARD_LOOT_STRIKE.title": "赃物打击",
   "SIN_CARD_LUBRICATE.description": "获得{DexterityPower:diff()}点[gold]敏捷[/gold]。\n在抽牌堆内放入1张[gold]粘液[/gold]。",
   "SIN_CARD_LUBRICATE.title": "润滑",

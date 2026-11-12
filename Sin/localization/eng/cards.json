@@ -141,7 +141,7 @@
   "SIN_CARD_LIGHT_LOAD.title": "Light Load",
   "SIN_CARD_LOOT_BAG.description": "Draw {Cards} cards from your Exhaust pile.",
   "SIN_CARD_LOOT_BAG.title": "Loot Bag",
-  "SIN_CARD_LOOT_STRIKE.description": "Deal {Damage:diff()} damage.\nPlay a random Attack or Skill from your Exhaust pile, then put it into your discard pile.",
+  "SIN_CARD_LOOT_STRIKE.description": "Deal {Damage:diff()} damage.\nPlay a random Attack or Skill from your Exhaust pile.",
   "SIN_CARD_LOOT_STRIKE.title": "Loot Strike",
   "SIN_CARD_LUBRICATE.description": "Gain {DexterityPower:diff()} Dexterity.\nPut a Slimed into your draw pile.",
   "SIN_CARD_LUBRICATE.title": "Lubricate",
