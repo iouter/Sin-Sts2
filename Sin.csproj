@@ -105,7 +105,7 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Nothing.STS2RitsuLib.ModAnalyzers" Version="0.8.2" />
+        <PackageReference Include="Miooowo.STS2RitsuLib.ModAnalyzers" Version="0.0.1" />
         <PackageReference Include="STS2.RitsuLib" Version="0.6.10" />
     </ItemGroup>
 
