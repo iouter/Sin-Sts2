@@ -1,0 +1,15 @@
+name: Build
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build STS2 Mod
+        uses: iouter/iouter_actions/sts2/build@master
+        with:
+          project-name: ${{ github.event.repository.name }}

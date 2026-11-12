@@ -1,0 +1,54 @@
+{
+    "author": "iouter, w_s_l",
+    "name": "Sin",
+    "description": "Added a new character named Sin",
+    "identity": "Iouter.Sin",
+    "shortName": "ioutersin",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "Sin",
+    "sources": [
+        {
+            "modifiers":[
+                {
+                    "condition": true,
+                    "exclude":[
+                        ".git/**",
+                        ".godot/**",
+                        ".idea/**",
+                        "Properties/**",
+                        "nuget.config",
+                        "README.md"
+                    ]
+                }
+            ]
+        }
+    ],
+    "symbols": {
+        "ModAuthor":{
+            "type": "parameter",
+            "dataType": "string",
+            "isRequired": "true",
+            "replaces": "{ModAuthor}",
+            "defaultValue": "Author"
+        },
+        "NullableChecks":{
+            "type": "parameter",
+            "dataType":"choice",
+            "choices": [
+                {
+                    "choice": "enable",
+                    "description": "More strict handling of possibly null values."
+                },
+                {
+                    "choice": "disable",
+                    "description": ""
+                }
+            ],
+            "replaces": "{NullableChecks}",
+            "defaultValue": "enable"
+        }
+    }
+}
