@@ -4,6 +4,10 @@ using Godot.Bridge;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Modding;
+using Sin.SinCode.Api;
+using Sin.SinCode.Api.Patches;
+using STS2RitsuLib;
+using STS2RitsuLib.Patching.Core;
 using Logger = MegaCrit.Sts2.Core.Logging.Logger;
 
 namespace Sin.SinCode;
@@ -23,6 +27,14 @@ public partial class MainFile : Node
 
     public static void Initialize()
     {
+        Gold.Register();
+
+        var patcher = RitsuLibFramework.CreatePatcher(ModId, "sin-patches");
+        patcher.RegisterPatch<PlayerGoldPatch>();
+
+        if (!patcher.PatchAll())
+            throw new InvalidOperationException("Critical patches failed.");
+
         Harmony harmony = new(ModId);
         InitializeTools();
         harmony.PatchAll();
