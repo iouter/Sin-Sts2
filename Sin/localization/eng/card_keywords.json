@@ -1,8 +1,0 @@
-{
-  "SIN_KEYWORD_SNEAK_ATTACK_IS_SCARY_HIGH.description": "Each time this card is played, it upgrades once for the rest of the run.",
-  "SIN_KEYWORD_SNEAK_ATTACK_IS_SCARY_HIGH.title": "Sneak Attack Is Scary High!",
-  "SIN_KEYWORD_TRANSFORM.description": "After this card is played, it transforms into another random card.\nIf a Curse or Status transforms this way, it becomes a random card.\nThe transformed card keeps upgrades and Transform.",
-  "SIN_KEYWORD_TRANSFORM.title": "Transform",
-  "SIN_KEYWORD_TRANSFORM_ANCIENT.description": "After this card is played, it transforms into another random Ancient Attack or Skill.\nThe transformed card keeps upgrades, cost and Ancient Transform.",
-  "SIN_KEYWORD_TRANSFORM_ANCIENT.title": "Ancient Transform"
-}
