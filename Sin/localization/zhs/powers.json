@@ -88,5 +88,9 @@
   "SIN_POWER_TURN_FORTUNE_POWER.title": "转祸为福",
   "SIN_POWER_WASTE_NOT_POWER.description": "每回合开始时，将你的[gold]消耗牌堆[/gold]中的{Cards}张随机[gold]消耗[/gold]牌或[gold]虚无[/gold]牌放入你的手牌。",
   "SIN_POWER_WASTE_NOT_POWER.smartDescription": "每回合开始时，将你的[gold]消耗牌堆[/gold]中的{Cards}张随机[gold]消耗[/gold]牌或[gold]虚无[/gold]牌放入你的手牌。",
-  "SIN_POWER_WASTE_NOT_POWER.title": "物尽其用"
+  "SIN_POWER_WASTE_NOT_POWER.title": "物尽其用",
+  "SIN_POWER_JOINT_LIABILITY_POWER.description": "你的下[blue]1[/blue]张[gold]消耗[/gold]牌变为免费。",
+  "SIN_POWER_JOINT_LIABILITY_POWER.smartDescription": "你的下[blue]{Amount}[/blue]张[gold]消耗[/gold]牌变为免费。",
+  "SIN_POWER_JOINT_LIABILITY_POWER.title": "连带责任"
+
 }

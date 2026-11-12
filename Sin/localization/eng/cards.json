@@ -131,7 +131,7 @@
   "SIN_CARD_INTEREST.title": "Interest",
   "SIN_CARD_INVISIBILITY.description": "Gain {DexterityPower:diff()} Dexterity.\nLose {StrengthPower:diff()} Strength.",
   "SIN_CARD_INVISIBILITY.title": "Invisibility",
-  "SIN_CARD_JOINT_LIABILITY.description": "Gain {Block:diff()} Block.\nThe next {FreeCards} Exhaust cards you play cost 0.",
+  "SIN_CARD_JOINT_LIABILITY.description": "Gain {Block:diff()} Block.\nThe next {JointLiabilityPower:diff()} Exhaust cards you play cost 0.",
   "SIN_CARD_JOINT_LIABILITY.title": "Joint Liability",
   "SIN_CARD_LEARN.description": "Copy {Cards} random cards from a player's hand.",
   "SIN_CARD_LEARN.title": "Learn",

@@ -88,5 +88,8 @@
   "SIN_POWER_TURN_FORTUNE_POWER.title": "Turn Fortune",
   "SIN_POWER_WASTE_NOT_POWER.description": "At the start of each turn, add {Cards} random Exhaust or Ethereal cards from your Exhaust pile to your hand.",
   "SIN_POWER_WASTE_NOT_POWER.smartDescription": "At the start of each turn, add {Cards} random Exhaust or Ethereal cards from your Exhaust pile to your hand.",
-  "SIN_POWER_WASTE_NOT_POWER.title": "Waste Not"
+  "SIN_POWER_WASTE_NOT_POWER.title": "Waste Not",
+  "SIN_POWER_JOINT_LIABILITY_POWER.description": "The next [blue]1[/blue] Exhaust cards you play cost 0.",
+  "SIN_POWER_JOINT_LIABILITY_POWER.smartDescription": "The next [blue]{Amount}[/blue] Exhaust cards you play cost 0.",
+  "SIN_POWER_JOINT_LIABILITY_POWER.title": "Joint Liability"
 }
