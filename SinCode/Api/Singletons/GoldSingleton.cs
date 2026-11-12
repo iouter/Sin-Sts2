@@ -3,7 +3,7 @@ using STS2RitsuLib.Combat.SecondaryResources;
 using STS2RitsuLib.Interop.AutoRegistration;
 using STS2RitsuLib.Models;
 
-namespace Sin.SinCode.Api;
+namespace Sin.SinCode.Api.Singletons;
 
 [RegisterSingleton]
 public class GoldSingleton()

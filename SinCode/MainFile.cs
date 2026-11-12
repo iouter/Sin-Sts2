@@ -7,6 +7,7 @@ using MegaCrit.Sts2.Core.Modding;
 using Sin.SinCode.Api;
 using Sin.SinCode.Api.Patches;
 using STS2RitsuLib;
+using STS2RitsuLib.Interop;
 using STS2RitsuLib.Patching.Core;
 using Logger = MegaCrit.Sts2.Core.Logging.Logger;
 
@@ -27,6 +28,7 @@ public partial class MainFile : Node
 
     public static void Initialize()
     {
+        ModTypeDiscoveryHub.RegisterModAssembly(ModId, Assembly.GetExecutingAssembly());
         Gold.Register();
 
         var patcher = RitsuLibFramework.CreatePatcher(ModId, "sin-patches");
