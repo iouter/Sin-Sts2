@@ -13,8 +13,13 @@ public class SortLoot() : SinCard(1, CardType.Skill, CardRarity.Common, TargetTy
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        var cards = await CommonActions.SelectCards(this, SelectionScreenPrompt, choiceContext, PileType.Hand,
-            count: DynamicVars.Cards.IntValue);
+        var cards = await CommonActions.SelectCards(
+            this,
+            SelectionScreenPrompt,
+            choiceContext,
+            PileType.Hand,
+            count: DynamicVars.Cards.IntValue
+        );
         foreach (var card in cards)
         {
             card.AddKeyword(CardKeyword.Ethereal);

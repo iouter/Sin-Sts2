@@ -18,8 +18,13 @@ public class Forsake() : SinCard(1, CardType.Skill, CardRarity.Common, TargetTyp
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await CommonActions.CardBlock(this, cardPlay);
-        var cards = await CommonActions.SelectCards(this, CardSelectorPrefs.ExhaustSelectionPrompt, choiceContext,
-            PileType.Hand, count: DynamicVars.Cards.IntValue);
+        var cards = await CommonActions.SelectCards(
+            this,
+            CardSelectorPrefs.ExhaustSelectionPrompt,
+            choiceContext,
+            PileType.Hand,
+            count: DynamicVars.Cards.IntValue
+        );
         foreach (var card in cards)
         {
             await CardCmd.Exhaust(choiceContext, card);

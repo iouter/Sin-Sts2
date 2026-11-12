@@ -22,8 +22,14 @@ public class SneakAttack() : SinCard(0, CardType.Attack, CardRarity.Common, Targ
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         var rng = Owner.RunState.Rng.CombatOrbGeneration;
-        var damage = rng.NextInt(DynamicVars[MinDamage].IntValue, DynamicVars[MaxDamage].IntValue + 1);
-        await new AttackCommand(damage).Targeting(cardPlay.Target!).FromCard(this, cardPlay).Execute(choiceContext);
+        var damage = rng.NextInt(
+            DynamicVars[MinDamage].IntValue,
+            DynamicVars[MaxDamage].IntValue + 1
+        );
+        await new AttackCommand(damage)
+            .Targeting(cardPlay.Target!)
+            .FromCard(this, cardPlay)
+            .Execute(choiceContext);
     }
 
     protected override void OnUpgrade()
