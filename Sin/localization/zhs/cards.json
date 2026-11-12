@@ -1,13 +1,19 @@
 ﻿{
-  "SIN_CARD_SIN_STRIKE.description": "",
-  "SIN_CARD_SIN_STRIKE.title": "",
+  "SIN_CARD_SIN_STRIKE.description": "造成{Damage:diff()}点伤害。",
+  "SIN_CARD_SIN_STRIKE.title": "打击",
 
-  "SIN_CARD_SIN_DEFEND.description": "",
-  "SIN_CARD_SIN_DEFEND.title": "",
+  "SIN_CARD_SIN_DEFEND.description": "获得{Block:diff()}点[gold]格挡[/gold]。",
+  "SIN_CARD_SIN_DEFEND.title": "防御",
 
-  "SIN_CARD_IMITATE.description": "",
-  "SIN_CARD_IMITATE.title": "",
+  "SIN_CARD_IMITATE.description": "[gold]复制[/gold]一名敌人的[gold]力量[/gold]或[gold]敏捷[/gold]。",
+  "SIN_CARD_IMITATE.title": "模仿",
 
-  "SIN_CARD_TARGET.description": "",
-  "SIN_CARD_TARGET.title": ""
+  "SIN_CARD_TARGET.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n选择一张手牌[gold]打出[/gold]并[gold]变化[/gold]。",
+  "SIN_CARD_TARGET.title": "目标",
+
+  "SIN_CARD_GOLD_STRIKE.description": "造成{Damage:diff()}点伤害。",
+  "SIN_CARD_GOLD_STRIKE.title": "金币打击",
+
+  "SIN_CARD_GORGEOUS_DISGUISE.description": "给予所有敌人{WeakPower:diff()}层[gold]虚弱[/gold]。",
+  "SIN_CARD_GORGEOUS_DISGUISE.title": "华丽伪装"
 }

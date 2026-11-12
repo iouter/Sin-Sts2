@@ -1,0 +1,20 @@
+name: Publish
+on:
+    push:
+        tags: ["v*"]
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+                  fetch-tags: true
+
+            - name: Publish STS2 Mod
+              uses: iouter/iouter_actions/sts2/publish@master
+              with:
+                  project-name: ${{ github.event.repository.name }}

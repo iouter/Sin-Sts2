@@ -1,7 +1,9 @@
 {
-  "SIN_POWER_SLIPPERY_PLAYER.description": "",
-  "SIN_POWER_SLIPPERY_PLAYER.title": "",
+    "SIN_POWER_SLIPPERY_PLAYER.description": "下[blue]1[/blue]次要失去生命值时，只会失去[blue]1[/blue]点生命。\n你的回合开始时，失去[blue]1[/blue]层溜滑。",
+    "SIN_POWER_SLIPPERY_PLAYER.smartDescription": "下[blue]{Amount}[/blue]次要失去生命值时，只会失去[blue]1[/blue]点生命。\n你的回合开始时，失去[blue]1[/blue]层溜滑。",
+    "SIN_POWER_SLIPPERY_PLAYER.title": "溜滑",
 
-  "SIN_POWER_THEFT.description": "",
-  "SIN_POWER_THEFT.title": ""
+    "SIN_POWER_THEFT.description": "当你的回合开始时，去除所有的盗窃，并获得等量的金币。",
+    "SIN_POWER_THEFT.smartDescription": "当你的回合开始时，去除所有的盗窃，并获得[blue]{Amount}[/blue]金币。",
+    "SIN_POWER_THEFT.title": "盗窃"
 }
