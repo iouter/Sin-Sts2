@@ -243,6 +243,6 @@
   "SIN_CARD_WASTE_NOT.title": "物尽其用",
   "SIN_CARD_WEIGH_OPTIONS.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n去除所有的[gold]盗窃[/gold]，每去除1[gold]盗窃[/gold]就额外获得{PerTheft}点[gold]格挡[/gold]。",
   "SIN_CARD_WEIGH_OPTIONS.title": "权衡利弊",
-  "SIN_CARD_WINDFALL.description": "对所有敌人造成{Damage:diff()}点伤害。\n将{CostCards}张[gold]代价[/gold]放入你的抽牌堆。",
+  "SIN_CARD_WINDFALL.description": "对所有敌人造成{Damage:diff()}点伤害。\n将{Cards:diff()}张[gold]代价[/gold]放入你的抽牌堆。",
   "SIN_CARD_WINDFALL.title": "一本万利"
 }

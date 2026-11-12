@@ -243,6 +243,6 @@
   "SIN_CARD_WASTE_NOT.title": "Waste Not",
   "SIN_CARD_WEIGH_OPTIONS.description": "Gain {Block:diff()} Block.\nRemove all Theft. Gain {PerTheft} additional Block per Theft removed.",
   "SIN_CARD_WEIGH_OPTIONS.title": "Weigh Options",
-  "SIN_CARD_WINDFALL.description": "Deal {Damage:diff()} damage to ALL enemies.\nShuffle {CostCards} Cost into your draw pile.",
+  "SIN_CARD_WINDFALL.description": "Deal {Damage:diff()} damage to ALL enemies.\nShuffle {Cards:diff()} Cost into your draw pile.",
   "SIN_CARD_WINDFALL.title": "Windfall"
 }
