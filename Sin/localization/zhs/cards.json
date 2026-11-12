@@ -41,7 +41,7 @@
   "SIN_CARD_CHANGE_NATURE.title": "变化本性",
   "SIN_CARD_COIN_BURST.description": "造成{Damage:diff()}点伤害。\n获得等量于所造成伤害{TheftMultiplier}倍的[gold]盗窃[/gold]。",
   "SIN_CARD_COIN_BURST.title": "爆金币",
-  "SIN_CARD_COIN_FLIP.description": "造成{Damage:diff()}点伤害。\n每当你获得或消耗[gold]金币[/gold]时，无论何处将此牌放入你的手牌。",
+  "SIN_CARD_COIN_FLIP.description": "造成{Damage:diff()}点伤害。\n每当你获得[gold]金币[/gold]时，无论何处将此牌放入你的手牌。",
   "SIN_CARD_COIN_FLIP.title": "抛硬币",
   "SIN_CARD_COMBO_KNIFE.description": "造成{Damage:diff()}点伤害。\n抽{Cards}张牌。\n敌人每失去{HpThreshold}%生命值，将1张此牌的复制品放入所有玩家的手牌中。",
   "SIN_CARD_COMBO_KNIFE.title": "连击飞刀",

@@ -41,7 +41,7 @@
   "SIN_CARD_CHANGE_NATURE.title": "Change Nature",
   "SIN_CARD_COIN_BURST.description": "Deal {Damage:diff()} damage.\nGain Theft equal to {TheftMultiplier} times the damage dealt.",
   "SIN_CARD_COIN_BURST.title": "Coin Burst",
-  "SIN_CARD_COIN_FLIP.description": "Deal {Damage:diff()} damage.\nWhenever you gain or spend Gold, put this card into your hand from anywhere.",
+  "SIN_CARD_COIN_FLIP.description": "Deal {Damage:diff()} damage.\nWhenever you gain Gold, put this card into your hand from anywhere.",
   "SIN_CARD_COIN_FLIP.title": "Coin Flip",
   "SIN_CARD_COMBO_KNIFE.description": "Deal {Damage:diff()} damage.\nDraw {Cards} card.\nWhenever the enemy loses {HpThreshold}% of its HP, add a copy of this card to all players' hands.",
   "SIN_CARD_COMBO_KNIFE.title": "Combo Knife",
