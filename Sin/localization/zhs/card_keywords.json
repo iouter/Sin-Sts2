@@ -1,10 +1,8 @@
-﻿{
-  "SIN_KEYWORD_SNEAK_ATTACK_IS_SCARY_HIGH.description": "",
+{
+  "SIN_KEYWORD_SNEAK_ATTACK_IS_SCARY_HIGH.description": "每打出1次该牌，在本局游戏中就升级1次该牌。",
   "SIN_KEYWORD_SNEAK_ATTACK_IS_SCARY_HIGH.title": "偷袭伤害大的可怕！",
-
-  "SIN_KEYWORD_TRANSFORM.description": "",
+  "SIN_KEYWORD_TRANSFORM.description": "该牌打出后，会变化为其他随机卡牌。\n诅咒或状态牌因此变化时，将变化为随机卡牌。\n变化后的牌会继承升级与转变。",
   "SIN_KEYWORD_TRANSFORM.title": "转变",
-
-  "SIN_KEYWORD_TRANSFORM_ANCIENT.description": "",
+  "SIN_KEYWORD_TRANSFORM_ANCIENT.description": "该牌打出后，会变化为其他随机的先古攻击牌或先古技能牌。\n变化后的牌会继承升级、费用与先古转变。",
   "SIN_KEYWORD_TRANSFORM_ANCIENT.title": "先古转变"
 }
