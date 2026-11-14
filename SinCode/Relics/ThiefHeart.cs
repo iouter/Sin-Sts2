@@ -1,5 +1,6 @@
 using BaseLib.Extensions;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.Entities.Relics;
@@ -42,6 +43,21 @@ public class ThiefHeart : SinRelic
         }
         await PowerCmd.Apply<Theft>(
             choiceContext,
+            Owner.Creature,
+            DynamicVars.Power<Theft>().BaseValue,
+            Owner.Creature,
+            null
+        );
+    }
+
+    public override async Task AfterCardChangedPiles(CardModel card, PileType oldPileType, AbstractModel? clonedBy)
+    {
+        if (clonedBy != null)
+        {
+            return;
+        }
+        await PowerCmd.Apply<Theft>(
+            new ThrowingPlayerChoiceContext(),
             Owner.Creature,
             DynamicVars.Power<Theft>().BaseValue,
             Owner.Creature,
