@@ -77,7 +77,7 @@
   "SIN_CARD_ELUSIVE.title": "捉摸不透",
   "SIN_CARD_ESCAPE.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n如果抽牌堆、弃牌堆、消耗牌堆中拥有[gold]慌乱逃离[/gold]，则打出其中随机的1张[gold]慌乱逃离[/gold]。",
   "SIN_CARD_ESCAPE.title": "逃跑",
-  "SIN_CARD_ESSENCE.description": "获得{Block:diff()}点[gold]格挡[/gold]。\n所有敌人每有1种正面状态或负面状态，你就额外获得{ExtraBlock}点[gold]格挡[/gold]。",
+  "SIN_CARD_ESSENCE.description": "获得{CalculatedBlock:diff()}点[gold]格挡[/gold]。\n所有敌人每有1种正面状态或负面状态，你就额外获得{CalculationExtra:diff()}点[gold]格挡[/gold]。",
   "SIN_CARD_ESSENCE.title": "取其精华",
   "SIN_CARD_EVER_CHANGING.description": "每回合开始时失去{LoseCount}种随机正面状态，获得{GainCount}种随机正面状态。\n（不会失去[gold]盗窃[/gold]）",
   "SIN_CARD_EVER_CHANGING.title": "千变万化",
