@@ -50,7 +50,11 @@ public class ThiefHeart : SinRelic
         );
     }
 
-    public override async Task AfterCardChangedPiles(CardModel card, PileType oldPileType, AbstractModel? clonedBy)
+    public override async Task AfterCardChangedPiles(
+        CardModel card,
+        PileType oldPileType,
+        AbstractModel? clonedBy
+    )
     {
         if (clonedBy != null)
         {
