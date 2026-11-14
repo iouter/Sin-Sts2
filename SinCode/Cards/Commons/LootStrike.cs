@@ -25,6 +25,11 @@ public class LootStrike() : SinCard(1, CardType.Attack, CardRarity.Common, Targe
             return;
         }
         await CardCmd.AutoPlay(choiceContext, card, null);
+        if (card.Pile is not { Type: PileType.Discard })
+        {
+            return;
+        }
+        await CardPileCmd.Add(card, PileType.Discard);
     }
 
     protected override void OnUpgrade()

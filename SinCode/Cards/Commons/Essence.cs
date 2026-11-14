@@ -10,8 +10,16 @@ namespace Sin.SinCode.Cards.Commons;
 public class Essence() : SinCard(0, CardType.Skill, CardRarity.Common, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars =>
-        [new CalculationBaseVar(5), new CalculationExtraVar(1), new CalculatedBlockVar(ValueProp.Move)
-            .WithMultiplier((card, target) => card.CombatState == null ? 0 : card.CombatState.HittableEnemies.Select(c => c.Powers.Count).Sum())];
+        [
+            new CalculationBaseVar(5),
+            new CalculationExtraVar(1),
+            new CalculatedBlockVar(ValueProp.Move).WithMultiplier(
+                (card, target) =>
+                    card.CombatState == null
+                        ? 0
+                        : card.CombatState.HittableEnemies.Select(c => c.Powers.Count).Sum()
+            ),
+        ];
     public override bool GainsBlock => true;
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)

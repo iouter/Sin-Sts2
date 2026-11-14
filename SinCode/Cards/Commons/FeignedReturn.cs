@@ -26,6 +26,11 @@ public class FeignedReturn() : SinCard(2, CardType.Attack, CardRarity.Common, Ta
         foreach (var card in cards)
         {
             await CardCmd.AutoPlay(choiceContext, card, null);
+            if (card.Pile is not { Type: PileType.Discard })
+            {
+                continue;
+            }
+            await CardPileCmd.Add(card, PileType.Discard);
         }
     }
 
