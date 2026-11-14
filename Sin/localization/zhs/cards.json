@@ -86,6 +86,7 @@
   "SIN_CARD_FALSE_CLUE.description": "每当你获得1次[gold]盗窃[/gold]时，对所有敌人造成{Damage:diff()}点伤害。",
   "SIN_CARD_FALSE_CLUE.title": "虚假线索",
   "SIN_CARD_FEIGNED_RETURN.description": "对所有敌人造成{Damage:diff()}点伤害。\n选择并打出{Cards}张[gold]消耗牌堆[/gold]的牌，并将这些牌放入弃牌堆。",
+  "SIN_CARD_FEIGNED_RETURN.selectionScreenPrompt": "选择并打出……（需要补全）。",
   "SIN_CARD_FEIGNED_RETURN.title": "假意奉还",
   "SIN_CARD_FEINT.description": "造成{Damage:diff()}点伤害。\n将[gold]消耗牌堆[/gold]里最多{Cards}张攻击牌或技能牌放入抽牌堆。",
   "SIN_CARD_FEINT.title": "声东击西",
