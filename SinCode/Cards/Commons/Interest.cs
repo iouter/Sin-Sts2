@@ -1,3 +1,4 @@
+using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -18,6 +19,6 @@ public class Interest() : SinCard(1, CardType.Skill, CardRarity.Common, TargetTy
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Power<Theft>(7);
+        DynamicVars.Power<Theft>().UpgradeValueBy(7);
     }
 }
