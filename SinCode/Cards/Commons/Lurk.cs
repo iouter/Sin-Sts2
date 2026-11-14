@@ -27,7 +27,7 @@ public class Lurk() : SinCard(1, CardType.Skill, CardRarity.Common, TargetType.S
         );
         if (card != null)
         {
-            await SinUtils.Transform(this, card, ModelDb.CardPool<ColorlessCardPool>());
+            await SinUtils.Transform(Owner, card, ModelDb.CardPool<ColorlessCardPool>());
         }
 
         await CommonActions.Apply<DexterityPower>(choiceContext, this, cardPlay);

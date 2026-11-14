@@ -22,7 +22,10 @@ public class FullPreparationPower : SinPower, IHasSecondAmount
         set => DynamicVars[PowerCount].BaseValue = value;
     }
 
-    public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
+    public override async Task AfterPlayerTurnStart(
+        PlayerChoiceContext choiceContext,
+        Player player
+    )
     {
         if (player.Creature != Owner)
         {
@@ -30,7 +33,13 @@ public class FullPreparationPower : SinPower, IHasSecondAmount
         }
 
         await PlayerCmd.GainEnergy(PowerAmount, player);
-        await PowerCmd.Apply<TemporaryStrengthPower>(choiceContext, Owner, PowerAmount, Owner, null);
+        await PowerCmd.Apply<TemporaryStrengthPower>(
+            choiceContext,
+            Owner,
+            PowerAmount,
+            Owner,
+            null
+        );
         await PowerCmd.Decrement(this);
     }
 
