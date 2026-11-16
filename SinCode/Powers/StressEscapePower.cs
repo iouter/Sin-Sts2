@@ -15,7 +15,7 @@ namespace Sin.SinCode.Powers;
 public class StressEscapePower : SinPower
 {
     public override PowerType Type => PowerType.Debuff;
-    public override PowerStackType StackType => PowerStackType.Single;
+    public override PowerStackType StackType => PowerStackType.Counter;
 
     protected override object InitInternalData() => new Data();
 
@@ -44,23 +44,33 @@ public class StressEscapePower : SinPower
         {
             return;
         }
-        if (GetInternalData<Data>().IsAttacked)
-        {
-            var card = player.RunState.Rng.CombatCardSelection.NextItem(
-                PileType.Hand.GetPile(player).Cards
-            );
-            if (card != null)
-            {
-                await SinUtils.Transform(
-                    player,
-                    card,
-                    ModelDb.CardPool<SinCardPool>(),
-                    c => c.Rarity == CardRarity.Common
-                );
-            }
-        }
-
+        await ApplyTransformIfAttacked(player);
         await PowerCmd.Remove(this);
+    }
+
+    private async Task ApplyTransformIfAttacked(Player player)
+    {
+        if (!GetInternalData<Data>().IsAttacked)
+            return;
+
+        var handCards = PileType.Hand.GetPile(player).Cards.ToList();
+        if (handCards.Count == 0)
+            return;
+
+        player.RunState.Rng.CombatCardSelection.Shuffle(handCards);
+
+        var take = Math.Clamp(Amount, 0, handCards.Count);
+        if (take == 0)
+            return;
+
+        var selected = handCards.GetRange(0, take);
+
+        await SinUtils.Transform(
+            player,
+            selected.ToArray(),
+            ModelDb.CardPool<SinCardPool>(),
+            c => c.Rarity == CardRarity.Common
+        );
     }
 
     private class Data

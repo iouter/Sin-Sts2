@@ -9,19 +9,17 @@ namespace Sin.SinCode.Api;
 
 public static class SinUtils
 {
-    public static async Task<CardPileAddResult?> Transform(
+    public static async Task<IEnumerable<CardPileAddResult>> Transform(
         Player player,
         CardModel original,
         CardPoolModel? cardPool = null,
         Func<CardModel, bool>? filter = null
     )
     {
-        var rng = player.RunState.Rng.CombatCardGeneration;
-        var result = GetTransformResult(original, rng, cardPool, filter);
-        return await CardCmd.Transform(original, result);
+        return await Transform(player, [original], cardPool, filter);
     }
 
-    public static async Task<IEnumerable<CardPileAddResult>> TransformList(
+    public static async Task<IEnumerable<CardPileAddResult>> Transform(
         Player player,
         CardModel[] originals,
         CardPoolModel? cardPool = null,
