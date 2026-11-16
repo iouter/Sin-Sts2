@@ -1,4 +1,7 @@
+using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 using Sin.SinCode.Api.Cards;
@@ -10,6 +13,12 @@ public class Bounty() : SinCard(2, CardType.Attack, CardRarity.Uncommon, TargetT
     protected override IEnumerable<DynamicVar> CanonicalVars =>
         [new DamageVar(15, ValueProp.Move), new GoldVar(30)];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
+
+    protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
+    {
+        await CommonActions.CardAttack(this, cardPlay).Execute(choiceContext);
+        await PlayerCmd.GainGold(DynamicVars.Gold.IntValue, Owner);
+    }
 
     protected override void OnUpgrade()
     {
