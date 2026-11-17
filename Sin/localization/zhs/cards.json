@@ -190,7 +190,7 @@
   "SIN_CARD_RESELL.title": "倒卖",
   "SIN_CARD_SEARCH.description": "获得{Gold}金币。",
   "SIN_CARD_SEARCH.title": "搜寻",
-  "SIN_CARD_SELL_OFF.description": "消耗所有手牌，获得消耗手牌数量{GoldMultiplier}倍的[gold]金币[/gold]。",
+  "SIN_CARD_SELL_OFF.description": "消耗所有手牌，获得消耗手牌数量{Gold}倍的[gold]金币[/gold]。",
   "SIN_CARD_SELL_OFF.title": "变卖",
   "SIN_CARD_SIN_DEFEND.description": "获得{Block:diff()}点[gold]格挡[/gold]。",
   "SIN_CARD_SIN_DEFEND.title": "防御",
