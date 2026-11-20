@@ -49,7 +49,7 @@
   "SIN_CARD_CONCEAL.title": "隐蔽",
   "SIN_CARD_CONSTRUCT_CORE.description": "消耗{SpendGold}金币。\n获得{ArtifactPower:diff()}层[gold]人工制品[/gold]。\n如果手牌中拥有[gold]状态[/gold]牌，则消耗所有[gold]状态[/gold]牌，获得等量的[gold]人工制品[/gold]。",
   "SIN_CARD_CONSTRUCT_CORE.title": "构造体核心",
-  "SIN_CARD_CONSUME.description": "随机对敌人造成X次{Damage:diff()}点伤害。\n失去X次{GoldLoss}金币。",
+  "SIN_CARD_CONSUME.description": "随机对敌人造成X次{Damage:diff()}点伤害。\n失去X次{Gold}金币。",
   "SIN_CARD_CONSUME.title": "消费",
   "SIN_CARD_COST.description": "赃物。",
   "SIN_CARD_COST.title": "代价",
