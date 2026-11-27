@@ -1,6 +1,7 @@
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.Factories;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Random;
@@ -52,5 +53,21 @@ public static class SinUtils
             cards = cards.Where(filter);
         }
         return CardFactory.CreateRandomCardForTransform(original, cards, true, rng);
+    }
+
+    public static List<CardModel> TakeRandomUpTo(List<CardModel> cards, Rng rng, int maxCount)
+    {
+        cards.StableShuffle(rng);
+        var take = Math.Clamp(maxCount, 0, cards.Count);
+        return cards.GetRange(0, take);
+    }
+
+    public static List<CardModel> TakeRandomUpTo(List<CardModel> cards, CardModel cardModel)
+    {
+        return TakeRandomUpTo(
+            cards,
+            cardModel.RunState!.Rng.CombatCardSelection,
+            cardModel.DynamicVars.Cards.IntValue
+        );
     }
 }

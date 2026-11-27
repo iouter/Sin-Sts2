@@ -3,6 +3,7 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
+using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.ValueProps;
@@ -57,7 +58,7 @@ public class StressEscapePower : SinPower
         if (handCards.Count == 0)
             return;
 
-        player.RunState.Rng.CombatCardSelection.Shuffle(handCards);
+        handCards.StableShuffle(player.RunState.Rng.CombatCardSelection);
 
         var take = Math.Clamp(Amount, 0, handCards.Count);
         if (take == 0)

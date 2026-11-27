@@ -91,6 +91,7 @@
   "SIN_POWER_WASTE_NOT_POWER.title": "物尽其用",
   "SIN_POWER_JOINT_LIABILITY_POWER.description": "你的下[blue]1[/blue]张[gold]消耗[/gold]牌变为免费。",
   "SIN_POWER_JOINT_LIABILITY_POWER.smartDescription": "你的下[blue]{Amount}[/blue]张[gold]消耗[/gold]牌变为免费。",
-  "SIN_POWER_JOINT_LIABILITY_POWER.title": "连带责任"
-
+  "SIN_POWER_JOINT_LIABILITY_POWER.title": "连带责任",
+  "SIN_POWER_PARRY_COUNTER_POWER.description": "",
+  "SIN_POWER_PARRY_COUNTER_POWER.title": ""
 }

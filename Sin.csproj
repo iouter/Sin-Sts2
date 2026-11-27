@@ -106,7 +106,7 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="Miooowo.STS2RitsuLib.ModAnalyzers" Version="0.0.1" />
-        <PackageReference Include="STS2.RitsuLib" Version="0.6.10" />
+        <PackageReference Include="STS2.RitsuLib" Version="0.6.16" />
     </ItemGroup>
 
     <ItemGroup>
@@ -143,7 +143,7 @@
     </ItemGroup>
 
     <ItemGroup Condition="!Exists('$(Sts2DataDir)/sts2.dll')">
-        <PackageReference Include="Book.StS2.RefLib" Version="0.111.0-beta" />
+        <PackageReference Include="Book.StS2.RefLib" Version="0.114.0-beta" />
     </ItemGroup>
 
     <ItemGroup>

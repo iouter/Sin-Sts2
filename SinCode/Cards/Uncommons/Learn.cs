@@ -2,6 +2,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using Sin.SinCode.Api;
 using Sin.SinCode.Api.Cards;
 
 namespace Sin.SinCode.Cards.Uncommons;
@@ -22,11 +23,7 @@ public class Learn() : SinCard(1, CardType.Skill, CardRarity.Uncommon, TargetTyp
         }
 
         var hands = PileType.Hand.GetPile(player).Cards.ToList();
-
-        RunState!.Rng.CombatCardSelection.Shuffle(hands);
-
-        var take = Math.Clamp(DynamicVars.Cards.IntValue, 0, hands.Count);
-        var selected = hands.GetRange(0, take);
+        var selected = SinUtils.TakeRandomUpTo(hands, this);
         if (selected.Count == 0)
         {
             return;

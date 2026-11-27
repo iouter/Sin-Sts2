@@ -2,6 +2,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using Sin.SinCode.Api;
 using Sin.SinCode.Api.Cards;
 
 namespace Sin.SinCode.Cards.Uncommons;
@@ -13,9 +14,7 @@ public class RepeatTrick() : SinCard(1, CardType.Skill, CardRarity.Uncommon, Tar
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         var cards = PileType.Discard.GetPile(Owner).Cards.ToList();
-        var count = DynamicVars.Cards.IntValue;
-        var take = Math.Clamp(count, 0, cards.Count);
-        var selected = cards.GetRange(0, take);
+        var selected = SinUtils.TakeRandomUpTo(cards, this);
         await CardPileCmd.Add(selected, PileType.Hand);
     }
 
