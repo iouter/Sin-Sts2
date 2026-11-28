@@ -22,7 +22,7 @@ public class ReactiveDefense()
         }
 
         var piles = PileType.Draw.GetPile(Owner).Cards.Where(c => c.GainsBlock).ToList();
-        var cards = SinUtils.TakeRandomUpTo(piles, this);
+        var cards = piles.TakeRandomUpTo(this);
         if (cards.Count == 0)
         {
             return;

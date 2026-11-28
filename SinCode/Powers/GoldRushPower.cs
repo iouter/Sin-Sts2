@@ -1,7 +1,8 @@
+using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Powers;
-using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models.Powers;
-using MegaCrit.Sts2.Core.ValueProps;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Models;
 using Sin.SinCode.Api.Powers;
 
 namespace Sin.SinCode.Powers;
@@ -11,5 +12,15 @@ public class GoldRushPower : SinPower
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new GoldVar(3)];
+    public override async Task AfterAttack(PlayerChoiceContext choiceContext, AttackCommand command)
+    {
+        var source = command.ModelSource;
+        if (source is not CardModel cardSource || cardSource.Owner.Creature != Owner)
+        {
+            return;
+        }
+
+        var player = cardSource.Owner;
+        await PlayerCmd.GainGold(Amount, player);
+    }
 }

@@ -13,7 +13,7 @@ public class LootBag() : SinCard(1, CardType.Skill, CardRarity.Uncommon, TargetT
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        var cards = SinUtils.TakeRandomUpTo(PileType.Exhaust.GetPile(Owner).Cards.ToList(), this);
+        var cards = PileType.Exhaust.GetPile(Owner).Cards.ToList().TakeRandomUpTo(this);
         await CardPileCmd.Add(cards, PileType.Hand);
     }
 

@@ -16,7 +16,7 @@ public class FullPreparation() : SinCard(1, CardType.Skill, CardRarity.Common, T
     {
         (await CommonActions.Apply<FullPreparationPower>(choiceContext, this, cardPlay))[
             0
-        ].PowerAmount = DynamicVars.Energy.IntValue;
+        ].PowerAmount += DynamicVars.Energy.IntValue;
     }
 
     protected override void OnUpgrade()

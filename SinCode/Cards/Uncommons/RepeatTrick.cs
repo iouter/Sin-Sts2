@@ -14,7 +14,7 @@ public class RepeatTrick() : SinCard(1, CardType.Skill, CardRarity.Uncommon, Tar
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         var cards = PileType.Discard.GetPile(Owner).Cards.ToList();
-        var selected = SinUtils.TakeRandomUpTo(cards, this);
+        var selected = cards.TakeRandomUpTo(this);
         await CardPileCmd.Add(selected, PileType.Hand);
     }
 

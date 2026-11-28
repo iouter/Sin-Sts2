@@ -23,7 +23,7 @@ public class Learn() : SinCard(1, CardType.Skill, CardRarity.Uncommon, TargetTyp
         }
 
         var hands = PileType.Hand.GetPile(player).Cards.ToList();
-        var selected = SinUtils.TakeRandomUpTo(hands, this);
+        var selected = hands.TakeRandomUpTo(this);
         if (selected.Count == 0)
         {
             return;

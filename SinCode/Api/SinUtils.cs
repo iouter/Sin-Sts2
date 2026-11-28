@@ -55,17 +55,18 @@ public static class SinUtils
         return CardFactory.CreateRandomCardForTransform(original, cards, true, rng);
     }
 
-    public static List<CardModel> TakeRandomUpTo(List<CardModel> cards, Rng rng, int maxCount)
+    public static List<T> TakeRandomUpTo<T>(this List<T> list, Rng rng, int maxCount)
+        where T : IComparable<T>
     {
-        cards.StableShuffle(rng);
-        var take = Math.Clamp(maxCount, 0, cards.Count);
-        return cards.GetRange(0, take);
+        list.StableShuffle(rng);
+        var take = Math.Clamp(maxCount, 0, list.Count);
+        return list.GetRange(0, take);
     }
 
-    public static List<CardModel> TakeRandomUpTo(List<CardModel> cards, CardModel cardModel)
+    public static List<T> TakeRandomUpTo<T>(this List<T> list, CardModel cardModel)
+        where T : IComparable<T>
     {
-        return TakeRandomUpTo(
-            cards,
+        return list.TakeRandomUpTo(
             cardModel.RunState!.Rng.CombatCardSelection,
             cardModel.DynamicVars.Cards.IntValue
         );
